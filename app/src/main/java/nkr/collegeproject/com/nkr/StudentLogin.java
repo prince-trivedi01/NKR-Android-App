@@ -126,21 +126,28 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
             return;
         }
 
-        if (StudentDatabase.checkStudent(textInputEditTextStudentUserId.getText().toString().trim(),
+        if (!StudentDatabase.checkStudent(textInputEditTextStudentUserId.getText().toString().trim(),
                 textInputEditTextStudentPassword.getText().toString().trim())) {
 
 
             Toast.makeText(this,"Login Successfully Attendance Added ",Toast.LENGTH_LONG ).show();
 
+            emptyInputEditText();
 
         } else {
             // Snack Bar to show success message that record is wrong
             Snackbar.make(nestedScrollView, getString(R.string.error_valid_user_password), Snackbar.LENGTH_LONG).show();
         }
 
+
+
+
     }
 
-
+    private void emptyInputEditText() {
+        textInputEditTextStudentUserId.setText(null);
+        textInputEditTextStudentPassword.setText(null);
+    }
 
 
 
