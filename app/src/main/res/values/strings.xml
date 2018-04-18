@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">NKR</string>
+
+    <string name="text_accounts">Students Attendance Details</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_userid">User ID</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_userid">Enter Valid UserId</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_user_exists">User Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_user_password">Wrong UserId or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string>
+    <string name="text_title">NKR</string>
+    <string name="teacher_login">Teacher Login</string>
+    <string name="student_login">Student Login</string>
+    <string name="teacher_registration">Teacher Registration</string>
+    <string name="student_registration">Student Registration</string>
+    <string name="hint_branch">Branch</string>
+    <string name="hint_semester">Semester</string>
+    <string name="sign_in">Sign In</string>
+    <string name="teacher_signin">Teacher Sign In</string>
+    <string name="submit">Submit</string>
+    <string name="hint_bd">Branch  Details</string>
+    <string name="hint_sd">Semester Details</string>
+    <string name="hint_time">Time </string>
+    <string name="hint_subject">Subject</string>
+    <string name="ld">Lecture Details</string>
+    <string name="AD">Attendance Details</string>
+    <string name="error_message_branch">Enter valid Branch</string>
+    <string name="error_message_semester">Enter valid Semester</string>
+    <string name="error_message_subject">Enter valid Subject</string>
+    <string name="error_wrongdetails">Invalid Details Entered</string>
+    <string name="error_message_time">Enter valid Time</string>
+</resources>
