@@ -170,12 +170,13 @@ public class StudentDB extends SQLiteOpenHelper {
      *
      * @param student
      */
-    public void deleteStudent(Student student) {
+    public boolean deleteStudent(Student student) {
         SQLiteDatabase db = this.getWritableDatabase();
         // delete Student record by id
         db.delete(TABLE_StudentInfo, COLUMN_Student_UserID + " = ?",
                 new String[]{String.valueOf(student.getStd_userID())});
         db.close();
+        return false;
     }
 
     public void deleteAll()

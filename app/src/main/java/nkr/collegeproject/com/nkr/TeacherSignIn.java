@@ -33,7 +33,7 @@ public class TeacherSignIn extends AppCompatActivity implements View.OnClickList
 
     private AppCompatButton appCompatTeacherLogin;
 
-
+    private AppCompatButton appCompatButtonDeleteStudent;
 
     private InputValidation inputValidation;
     private TeacherDB TeacherDatabase;
@@ -65,7 +65,7 @@ public class TeacherSignIn extends AppCompatActivity implements View.OnClickList
         textInputEditTextTeacherPassword = (TextInputEditText) findViewById(R.id.textInputEditTextTeacherRePassword);
 
         appCompatTeacherLogin = (AppCompatButton) findViewById(R.id.appCompatButtonTeacherSignIn);
-
+        appCompatButtonDeleteStudent = (AppCompatButton) findViewById(R.id.appCompatButtonDelete);
 
 
     }
@@ -75,7 +75,7 @@ public class TeacherSignIn extends AppCompatActivity implements View.OnClickList
      */
     private void initListeners() {
         appCompatTeacherLogin.setOnClickListener(this);
-
+        appCompatButtonDeleteStudent.setOnClickListener(this);
     }
 
     /**
@@ -98,6 +98,9 @@ public class TeacherSignIn extends AppCompatActivity implements View.OnClickList
 
 
                 break;
+            case R.id.AppCompactTextViewLectureDetails:
+                Intent deleteIntent = new Intent(activity, DeleteStudent.class);
+                startActivity(deleteIntent);
         }
     }
 

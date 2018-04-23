@@ -41,4 +41,5 @@
     <string name="error_message_subject">Enter valid Subject</string>
     <string name="error_wrongdetails">Invalid Details Entered</string>
     <string name="error_message_time">Enter valid Time</string>
+    <string name="delete">Delete Student</string>
 </resources>

@@ -63,8 +63,9 @@ public class StudentRecyclerAdapter extends RecyclerView.Adapter<StudentRecycler
         public StudentViewHolder(View view) {
             super(view);
             textViewStudentName = (AppCompatTextView) view.findViewById(R.id.textViewStudentName);
-            textViewStudentBranch = (AppCompatTextView) view.findViewById(R.id.textViewStudentUserId);
             textViewStudentUserId = (AppCompatTextView) view.findViewById(R.id.textViewSudentBranch);
+            textViewStudentBranch = (AppCompatTextView) view.findViewById(R.id.textViewStudentUserId);
+
         }
     }
 

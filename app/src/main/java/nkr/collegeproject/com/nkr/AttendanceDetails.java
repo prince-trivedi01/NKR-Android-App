@@ -1,13 +1,17 @@
 package nkr.collegeproject.com.nkr;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.AppCompatButton;
 import android.support.v7.widget.AppCompatTextView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,16 +34,41 @@ public class AttendanceDetails extends AppCompatActivity {
         getSupportActionBar().setTitle("");
         initViews();
         initObjects();
+        FinalSubmit();
 
     }
 
-
+    private AppCompatButton appCompatButtonFinalSubmit;
     private AppCompatActivity activity = AttendanceDetails.this;
     private AppCompatTextView textViewStudentNameA;
     private RecyclerView recyclerViewStudent;
     private List<Student> listStudent;
     private StudentRecyclerAdapter studentRecyclerAdapter;
     private StudentDB StudentDataBase;
+
+
+
+    public void FinalSubmit() {
+        final Context context = this;
+
+
+        appCompatButtonFinalSubmit = (AppCompatButton) findViewById(R.id.appCompatButtonFinalSubmit);
+        appCompatButtonFinalSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+                Intent intent = new Intent(context, IndexPage.class);
+                startActivity(intent);
+
+
+
+            }
+        });
+
+
+    }
 
 
 
@@ -91,6 +120,9 @@ public class AttendanceDetails extends AppCompatActivity {
                 studentRecyclerAdapter.notifyDataSetChanged();
             }
         }.execute();
+
+
+
     }
 
 

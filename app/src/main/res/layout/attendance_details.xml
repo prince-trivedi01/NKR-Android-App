@@ -42,4 +42,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/appCompatButtonFinalSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:onClick="FinalSubmit"
+        android:background="@color/colorTextHint"
+        android:text="@string/submit" />
+
 </LinearLayout>

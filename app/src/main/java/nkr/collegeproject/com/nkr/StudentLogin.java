@@ -129,10 +129,14 @@ public class StudentLogin extends AppCompatActivity implements View.OnClickListe
         if (!StudentDatabase.checkStudent(textInputEditTextStudentUserId.getText().toString().trim(),
                 textInputEditTextStudentPassword.getText().toString().trim())) {
 
+         //   Intent accountsIntent = new Intent(activity,null);
+          //  accountsIntent.putExtra("UserId", textInputEditTextStudentUserId.getText().toString().trim());
 
+//            startActivity(accountsIntent);
+            emptyInputEditText();
             Toast.makeText(this,"Login Successfully Attendance Added ",Toast.LENGTH_LONG ).show();
 
-            emptyInputEditText();
+
 
         } else {
             // Snack Bar to show success message that record is wrong
